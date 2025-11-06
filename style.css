@@ -1,0 +1,712 @@
+/*RESET*/
+
+body, h1, h2, h3, p, figure {margin: 0;}
+a{color: inherit;}
+
+
+/*GERAL*/
+body{
+    font-family:Lato, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+image{
+    width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*TOP-SITE*/
+.top-site{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    border-bottom: solid 1px rgb(71, 146, 199);
+    background-color: aliceblue;
+}
+
+.top-site img{
+    width: 40%;
+}
+
+.menu a{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+    color: rgb(71, 146, 199);
+}
+
+/*INTRO*/
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px 100px;
+    align-items: center;
+}
+
+.project-logo{width: 30%;}
+
+.information {
+    padding-right: 120px;
+}
+
+.information section {
+    padding-bottom: 30px;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.title h1 + h1 {
+    margin-top: -20px;
+}
+
+.sub-title h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.introduction{
+    font-size: 20px;
+    font-weight: 350;
+    text-align: justify;
+    line-height: 1.3;
+    padding-bottom: 0;
+}
+
+.introduction p{
+    padding-bottom: 10px;
+}
+
+.button{
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+/*BENEFICIOS*/
+
+.beneficios{
+    background-color:rgba(125, 178, 219, 0.507);
+    padding: 70px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beneficios img{
+    width: 50%;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3)
+}
+
+.container{
+    text-align: left;
+    width: 50%;
+    padding: 30px;
+    margin-left: 40px;
+}
+
+.beneficios h1{
+    font-size: 60px;
+    padding-bottom: 25px;
+}
+
+.beneficios h2{
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.beneficios p{
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: 390;
+}
+
+.list-beneficios{
+    margin-bottom: 30px;
+}
+
+
+/*CONTENTS*/
+
+.contents{
+    background-color: rgb(78, 87, 70);
+    color: white;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.contents-names h1{
+    font-weight: 350;
+}
+
+.contents-names{
+    padding-bottom: 40px;
+} 
+
+/*CARROSEL*/
+
+.eco-pontos {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;               
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth; 
+    width: 100%;       
+    scroll-padding-left: 20px;  
+    scroll-padding-right: 20px; 
+    scroll-padding-top: 10px;
+    scroll-padding-bottom: 10px
+}
+
+.eco-ponto {
+    flex: 0 0 21%;                  
+    min-width: 21%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.carousel a{
+    margin: 15px;
+    opacity: 0;
+    transform: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.344);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/*ECO-PONTOS*/
+
+.eco-pontos{
+    color: black;
+}
+
+.eco-ponto header p{
+    margin: auto;
+    font-size: 15px;
+}
+
+.eco-pontos h1{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.eco-pontos article{ 
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    transition : transform 0.3s;
+}
+
+
+.eco-pontos img{ 
+    width: 60%;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.eco-pontos{
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+
+/*EXTRA*/
+
+.contents-extra{
+    background-color: rgba(78, 87, 70, 0.561);
+    color: white;
+    padding: 70px 100px;
+    text-align: center;
+}
+
+.contents-extra-names h1{
+    font-weight: 350;
+}
+
+.contents-extra-names{
+    padding-bottom: 20px;
+} 
+
+/*ECO-PONTOS-EXTRA*/
+
+.eco-pontos-extra{
+    color: black;
+}
+
+.eco-pontos-extra h1{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.eco-pontos-extra article{ 
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.eco-pontos-extra img{ 
+    width: 60%;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.eco-pontos-extra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eco-pontos-extra header p{
+    margin: auto;
+    font-size: 15px;
+}
+
+
+/*QUESTIONARIO*/
+
+.questionário{
+    padding: 70px 100px;
+}
+
+.questionário-title h1{
+    font-weight: 400;
+    padding-bottom: 15px;
+    color: rgb(71, 146, 199);
+    text-align: center;
+}
+
+.perguntas{
+    border: solid 1px rgba(128, 128, 128, 0.364);
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.perguntas h1{
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+perguntas{
+    font-size: 25px;
+}
+
+.btn{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    background-color:rgb(71, 146, 199);
+    color: #fff;
+    border-radius: 40px;
+    text-align: center;
+    width: 10%;
+    align-items: center;
+    border: none;
+    margin-top: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    margin-right: 40px;
+    border: 2px solid transparent;
+}
+
+.btns{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px 0;
+}
+
+.perguntas label{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.checkbox{
+    border-right: solid 1px rgba(128, 128, 128, 0.364);
+    width: 33%;
+}
+
+.extra-escolha{
+    border-right: solid 1px rgba(128, 128, 128, 0.364);
+    width: 33%;
+    padding: 0 15px;
+    margin-left: 15px;
+}
+
+.extra-escolha header{
+    padding-bottom: 15px;
+}
+
+.perguntas { 
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.extra-escolha label {
+    display: flex;
+    align-items: center;
+}
+
+/*EMAIL*/
+
+.mail{
+    width: 33%;
+    padding: 0 15px;
+    margin-left: 15px;
+}
+
+.extra{
+    font-size: 15px;
+    padding: 10px 0px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 0px 100px;
+    padding-top: 60px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 390;
+}
+
+footer h1{
+    padding-bottom: 30px;
+    font-size: 17px;
+}
+
+.c-m-o{
+    font-weight: bold;
+}
+
+.footer{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 45%;
+}
+
+.footer a{
+    color: rgb(71, 146, 199);
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.footer-project{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/*TEXT-HOVER*/
+
+.eco-hover-text h3{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.eco-hover-text p{
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+    line-height: 1.2;
+    display: list-item;
+    list-style-type: "♼"; 
+    padding-left: 10px;
+    text-indent: -4 px;
+}
+
+.eco-ponto{
+    transition: background-color 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.eco-ponto-extra{
+    transition: background-color 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.eco-ponto:hover{
+    background-color: rgba(228, 232, 226, 0.432);
+    transform: scale(1.15);
+    color: transparent;
+}
+
+.eco-ponto-extra:hover{
+    background-color: rgba(73, 96, 72, 0.344);
+    transform: scale(1.15);
+    color: transparent;
+}
+
+.eco-ponto:hover .eco-ponto-img{
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.eco-ponto-extra:hover .eco-ponto-img{
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.eco-hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+}
+
+.eco-ponto:hover .eco-hover-text {
+    opacity: 1;
+}
+
+.eco-ponto-extra:hover .eco-hover-text {
+    opacity: 1;
+}
+
+.carousel:hover .botão{
+    opacity: 1;
+}
+
+
+/*COR-HOVER*/
+
+.sobre:hover{
+    color: rgb(165, 189, 56);
+}
+
+.sobre{
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.contactos:hover{
+    color: rgb(165, 189, 56);
+}
+
+.contactos{
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(71, 146, 199);
+    transform: scale(1.15);
+    color: #fff;
+}
+
+.btn{
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(176, 205, 227, 0.4);
+    transform: scale(0.95);
+    color: black;
+    border: 2px solid rgb(71, 146, 199);
+}
+
+/* Telemovel*/
+@media (max-width: 768px){
+
+    /* GERAL */
+    body{
+        font-size: 16px;
+    }
+
+    /* TOPO */
+    .top-site{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-site img{
+        width: 70%;
+    }
+
+    .menu a{
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    /* INTRO */
+    .intro{
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .information{
+        padding-right: 0;
+    }
+
+    .project-logo{
+        width: 60%;
+        margin-top: 30px;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+    .sub-title h2{
+        font-size: 25px;
+    }
+
+    /* BENEFÍCIOS */
+    .beneficios{
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .beneficios img{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .beneficios h1{
+        font-size: 40px;
+    }
+
+    /*ECO-PONTOS EM SCROLL*/
+    .eco-pontos{
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .eco-ponto{
+        min-width: 70%;
+    }
+
+    /* EXTRA - também em carousel */
+    .eco-pontos-extra{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .eco-ponto-extra{
+        min-width: 70%;
+    }
+
+    /* QUESTIONÁRIO */
+    .perguntas{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .checkbox, .extra-escolha, .mail{
+        width:100%;
+        border-right: none;
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: solid 1px rgba(128,128,128,0.2);
+    }
+
+    .checkbox:last-child,
+    .extra-escolha:last-child,
+    .mail:last-child{
+        border-bottom: none;
+    }
+
+    .btns{
+        justify-content: center;
+    }
+
+    .btn{
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    /*FOOTER*/
+    
+    .footer{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+        align-items: center;
+    }
+}
